@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hoodlinsmod",
+	"version": "${version}",
+	"name": "Hoodlins Mod",
+	"description": "This is a Hoodlins Mod made by Skef14 :)",
+	"authors": [
+		"Skef14"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/hoodlinsmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.skef.hoodlinsmod.HoodlinsMod"
+		],
+		"client": [
+          "net.skef.hoodlinsmod.HoodlinsModClient"
+		],
+		"fabric-datagen": [
+			"net.skef.hoodlinsmod.HoodlinsModDataGenerator"
+		]
+	},
+	"mixins": [
+		"hoodlinsmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
